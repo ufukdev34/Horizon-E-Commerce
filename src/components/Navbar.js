@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react'
-import { Menu,Search,Icon,Grid} from 'semantic-ui-react'
+import { Menu,Search,Icon} from 'semantic-ui-react'
 import '../assets/styles/Navbar.css'
 import { Link } from 'react-router-dom'
 export default function Navbar() {
@@ -18,11 +18,12 @@ export default function Navbar() {
                 loading
             />
         </Menu.Item>
-        <Menu.Item as={Link} to="/sweatshirts"
+        <Menu.Item as={Link} to="/category/sweatshirts"
           name='Sweatshirts'
           className='navbar__item'
         />
         <Menu.Item
+        as={Link} to="/category/tshirts"
           name='T-Shirts'
           className='navbar__item'
         />

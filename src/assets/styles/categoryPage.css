@@ -1,26 +1,38 @@
 .categoryPage__grid{
-    height: calc(100vh - 5rem);
-    margin: 0 !important;
-    padding: 0 !important;
+    height:100vh;
+    padding-top: 6em !important;
+    position: relative !important;
+    z-index: 2 !important;
+    overflow-y: hidden !important;
 }
-html{
-    padding-top: 5rem !important;
-}
-.categoryPage__cardsContainer{
-    display: grid !important;
-    grid-template-columns: repeat(auto-fit,minmax(15em,20vw)) !important;
-    grid-auto-rows: 25em;
-    gap: 2em;
-    justify-content: center;
-    overflow-y: auto;
+.categoryPage__productsGrid{
+    overflow-y: auto !important;
+    height:calc(100vh - 6em);
 }
 .categoryPage__card{
+    margin:0 !important;
     padding:0 !important;
-    margin: 0 !important;
+    overflow: hidden;
+    transition: transform .2s ease-in-out !important;
 }
 
+.categoryPage__card__description,.categoryPage__card__header{
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
 .categoryPage__sidebar{
-    position: sticky !important;
-    top:0 !important;
+    height:calc(100vh - 6em);
+}
 
+.filterClearButton{
+    text-align:right;
+    color:#ee5252 !important;
+    font-weight:800 !important;
+}
+.filterClearButton:hover{
+    background-color: transparent !important;
+}
+.ui.default.dropdown:not(.button)>.text, .ui.dropdown:not(.button)>.default.text {
+    color: #858585 !important;
 }

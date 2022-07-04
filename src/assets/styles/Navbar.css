@@ -1,5 +1,6 @@
 #navbar{
     height:6rem !important;
+    z-index: 9 !important;
 }
 .navbar__icon{
     font-size: 1.5em;

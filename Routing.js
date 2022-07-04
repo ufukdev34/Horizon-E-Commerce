@@ -2,13 +2,14 @@ import React from 'react'
 import { Route } from 'react-router'
 import { Routes } from 'react-router-dom'
 import HomePage from './src/pages/HomePage'
-import Sweatshirts from './src/pages/Sweatshirts'
+import CategoryPage from './src/pages/CategoryPage'
 
 export default function Routing() {
   return (
     <Routes>
-        <Route exact path='/' element={<HomePage/>} />
-        <Route exact path='/sweatshirts' element={<Sweatshirts/>} />
+        <Route path='/' element={<HomePage/>} />
+        <Route path='/category/sweatshirts' element={<CategoryPage category="sweatshirts"/>} />
+        <Route path='/category/tshirts' element={<CategoryPage category="tshirts"/>} />
     </Routes>
   )
 }
