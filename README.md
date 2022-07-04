@@ -1,4 +1,4 @@
-# **PandoraBox Game Store**  
+# **HorizonStore E-Commerce**  
   
 
 I have built this project for understanding the concepts of RxJS and E-Commerce.
