@@ -8,6 +8,7 @@
 }
 .navbar__icon span{
     font-weight: 300 !important;
+    color:#1076d4 !important;
 }
 .navbar__item{
     font-size: 1.15em;
@@ -15,6 +16,9 @@
 #shoppingCartIcon{
     font-size: 1.55em;
     position: relative;
+}
+#shoppingCartIcon:hover{
+    background-color: transparent !important;
 }
 #shoppingCartCounter{
     border-radius: 100%;

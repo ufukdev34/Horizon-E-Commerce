@@ -21,12 +21,12 @@ export default function(state=defaultState,action){
                 itemCount:changeCount([...state.cart,action.payload]),
                 cart:[...state.cart,action.payload]
             }
-        /* case ACTIONS.REMOVE_FROM_CART:
+        case ACTIONS.REMOVE_FROM_CART:
             return{
                 ...state,
                 itemCount:changeCount(),
-                cart:[action.payload]
-            } */
+                cart:state.cart.filter(item=>item._id !== action.payload)
+            }
 
         case ACTIONS.CHANGE_AMOUNT:
             let itemToChange = state.cart.find(item=>item?._id === action.payload?._id)

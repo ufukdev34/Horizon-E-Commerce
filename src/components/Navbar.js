@@ -25,7 +25,7 @@ export default function Navbar() {
           className='navbar__item'
         />
         
-        <Menu.Item className='navbar__item' id="shoppingCartIcon">
+        <Menu.Item className='navbar__item' id="shoppingCartIcon" as={Link} to="/cart">
             <Icon name="shopping cart"/>
             {
               cartQuantity > 0 &&

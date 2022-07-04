@@ -1,0 +1,35 @@
+#cartPage__grid{
+    height: 100vh !important;
+    padding-top: 6em !important;
+}
+
+#productPage__price{
+    color:#1076d4;
+    font-weight: 800 !important;
+    margin-right:1em !important;
+    font-size: 1.2em;
+}
+
+#productPage__button{
+    background-color: #1076d4 !important;
+    color:#fff !important;
+}
+
+#productPage__button .icon{
+    opacity: 1 !important;
+}
+
+#productPage__quantityButtons{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: .8em !important;
+    gap:1em;
+    font-weight: 800 !important;
+}
+
+#cartPage__button{
+    background-color: #1076d4 !important;
+    color:#fff !important;
+    margin-top: 2em !important;
+}
