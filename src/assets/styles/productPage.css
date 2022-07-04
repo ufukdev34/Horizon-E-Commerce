@@ -1,0 +1,58 @@
+#productPage__grid{
+    height:100vh;
+    padding-top: 7em;
+}
+
+#productPage__loginContainer{
+    height: 100vh !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+}
+
+#productPage__title{
+    font-size: 1.8rem !important;
+}
+
+#productPage__content{
+    padding-left: 2rem;
+    font-size: 1.15em !important;
+}
+
+.productPage__feature span{
+    font-weight: 800;
+}
+
+.feature__description{
+    margin-top: 4em !important;
+    font-size: .88em !important;
+    font-weight: 200 !important;
+}
+
+#productPage__price{
+    color:#1076d4;
+    font-weight: 800 !important;
+    margin-right:1em !important;
+    font-size: 1.2em;
+}
+
+#productPage__button{
+    background-color: #1076d4 !important;
+    color:#fff !important;
+}
+
+#productPage__button .icon{
+    opacity: 1 !important;
+}
+
+#productPage__quantityButtons{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: .8em !important;
+    gap:1em;
+    font-weight: 800 !important;
+}
+#productPage__quantityButtons button{
+    
+}

@@ -2,9 +2,12 @@ import React, { useEffect, useState } from 'react'
 import { Menu,Search,Icon} from 'semantic-ui-react'
 import '../assets/styles/Navbar.css'
 import { Link } from 'react-router-dom'
+import { useSelector } from 'react-redux/es/exports'
+
 export default function Navbar() {
     const [state, setState] = useState()
-      
+    const cartQuantity = useSelector(state=>state.itemCount)
+
   return (
     <Menu fixed='top' id='navbar' borderless>
         <Menu.Item as={Link} to="/">
@@ -12,13 +15,7 @@ export default function Navbar() {
                 Horizon<span>Store</span>
             </Menu.Item>
         </Menu.Item>
-        <Menu.Item position='right'>
-            <Search
-                fluid
-                loading
-            />
-        </Menu.Item>
-        <Menu.Item as={Link} to="/category/sweatshirts"
+        <Menu.Item as={Link} to="/category/sweatshirts" position='right'
           name='Sweatshirts'
           className='navbar__item'
         />
@@ -30,7 +27,10 @@ export default function Navbar() {
         
         <Menu.Item className='navbar__item' id="shoppingCartIcon">
             <Icon name="shopping cart"/>
-            <div id="shoppingCartCounter">2</div>
+            {
+              cartQuantity > 0 &&
+              <div id="shoppingCartCounter">{cartQuantity}</div>
+            }
         </Menu.Item>
 
     </Menu>
