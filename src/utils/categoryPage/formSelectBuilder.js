@@ -1,14 +1,10 @@
 import React from 'react'
 import {Form} from 'semantic-ui-react'
-
+import translateFilterValue
+ from './translateFilterValue'
 export default function formSelectBuilder(type,title,options,setFilter,filterValue) {
   
-  if(filterValue === "Male"){
-    filterValue = "Erkek"
-  }
-  else if(filterValue === "Female"){
-    filterValue = "Kadın"
-  }
+  translateFilterValue(filterValue)
 
   if(type === "gender"){
     return (
@@ -44,13 +40,3 @@ export default function formSelectBuilder(type,title,options,setFilter,filterVal
     )
   }
 }
-
-{/* <Form.Group grouped>
-    <label>Beden</label>
-    <Grid textAlign='center' padded columns={4}>
-        <Form.Field as={Grid.Column} label='S' control='input' type='checkbox' />
-        <Form.Field as={Grid.Column} label='M' control='input' type='checkbox' />
-        <Form.Field as={Grid.Column} label='L' control='input' type='checkbox' />
-        <Form.Field as={Grid.Column} label='XL' control='input' type='checkbox' />
-    </Grid>
-</Form.Group> */}

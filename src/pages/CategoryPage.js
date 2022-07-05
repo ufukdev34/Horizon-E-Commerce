@@ -37,7 +37,6 @@ export default function CategoryPage({category}) {
         document.querySelector('.categoryPage__productsGrid').scrollTo({top:0})
     },[filterGender,filterBrand])
     
-    
     sortData(itemsToShow,filterPrice)
 
   return (

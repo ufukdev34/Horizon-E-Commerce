@@ -1,5 +1,3 @@
-import React,{ useEffect } from "react"
-
 const filterProducts = (products,filterGender,filterBrand,itemsToShow,setItemsToShow) => {
         if(filterGender !== ""){
             const filteredGenderItems = itemsToShow.filter(item=>item.gender === filterGender)

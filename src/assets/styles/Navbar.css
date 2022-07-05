@@ -34,3 +34,35 @@
     display:grid;
     place-items: center;
 }
+
+#hamburger__icon{
+    font-size: 1.2em !important;
+    display:none;
+}
+
+@media screen and (max-width:768px){
+    .responsive{
+        display:none !important;
+    }
+    #hamburger__icon{
+        display:flex !important;
+    }
+}
+
+@media screen and (min-width:768px){
+    .responsive{
+        display:flex !important;
+    }
+    #hamburger__icon{
+        display:none !important;
+    }
+}
+.menuSidebar{
+    position:absolute !important;
+    top:0 !important;
+    bottom:0 !important;
+    z-index: 99 !important;
+    padding:0 !important;
+    margin: 0 !important;
+}
+
