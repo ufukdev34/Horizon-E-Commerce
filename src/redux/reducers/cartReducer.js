@@ -29,17 +29,14 @@ export default function(state=defaultState,action){
             }
 
         case ACTIONS.CHANGE_AMOUNT:
-            let itemToChange = state.cart.find(item=>item?._id === action.payload?._id)
-            let newCart = []
+            let cartOfOperation = [...state.cart]
+          
+            cartOfOperation.find(item=>item._id === action.payload._id).quantity = action.payload.quantity
             
-            itemToChange.quantity = action.payload?.quantity
-
-            newCart = [...state.cart.filter(item=>item?._id !== itemToChange?._id),itemToChange]
-
             return{
                 ...state,
-                itemCount:changeCount(newCart),
-                cart:newCart
+                itemCount:changeCount(cartOfOperation),
+                cart:cartOfOperation
             }
 
        default:

@@ -88,7 +88,7 @@ export default function CartPage() {
                 <Container style={{marginTop:"2em"}}>
                     <Segment placeholder>
                         <Header icon>
-                            <Icon name='shopping' style={{marginBottom:".3em"}} />
+                            <Icon name='shopping bag' style={{marginBottom:".3em"}} />
                                 Sepetinizde ürün bulunamadı.
                                 <br/>
                                 <Link to="/">Alışverişe Devam Et</Link>
