@@ -39,6 +39,12 @@ export default function(state=defaultState,action){
                 cart:cartOfOperation
             }
 
+        case ACTIONS.CLEAR_CART:
+            return{
+                ...state,
+                itemCount:0,
+                cart:[]
+            }
        default:
             return state
     }

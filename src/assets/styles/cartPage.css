@@ -33,3 +33,8 @@
     color:#fff !important;
     margin-top: 2em !important;
 }
+
+#cartPage__clearButton{
+    background-color: #c22e2e !important;
+    color: #fff;
+}

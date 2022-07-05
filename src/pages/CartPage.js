@@ -31,6 +31,11 @@ export default function CartPage() {
                 return
     }
     }
+
+    const handleClearCart = () => {
+        dispatch({type:ACTIONS.CLEAR_CART})
+    }
+
   return (
     <Grid id="cartPage__grid" columns={1} padded textAlign="center">
         <Grid.Column computer={8} tablet={10} mobile={12}>
@@ -81,6 +86,7 @@ export default function CartPage() {
             </Grid.Row>
             <Grid.Row>
                 <Button id='cartPage__button'>Satın Al</Button>
+                <Button id='cartPage__clearButton' onClick={handleClearCart}>Sepeti Temizle</Button>
             </Grid.Row>
             </>
                 :
